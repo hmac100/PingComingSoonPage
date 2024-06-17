@@ -1,0 +1,201 @@
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  }
+  
+
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 100%, 100%);
+  width:85%;
+  padding: .5rem 0rem 2rem 0rem;
+}
+.logo img {
+transform: scale(1.7);
+padding: 3rem 0rem 2rem 0rem;
+
+}
+h1 {
+  font-weight:300;
+  color: hsl(0, 0%, 59%);
+  font-size: 48px;
+  margin-top: .5rem;
+  
+}
+span {
+  font-weight: 700;
+  color:  hsl(209, 33%, 12%);
+}
+p {
+  font-size: 20px;
+  color:  hsl(209, 33%, 12%); 
+  padding: .6rem 0rem 1.8rem 0rem;
+}
+
+
+input {
+  width:450px;
+  margin-right: 10px;
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 100%);
+  padding:16px;
+  border: 1px solid hsla(0, 0%, 59%, .4);
+  padding-left: 2rem;
+ 
+
+}
+::placeholder {
+color:  hsla(0, 0%, 59%, .5);
+font-size: 15px;
+}
+
+button.blueBtn {
+  background-color: hsl(223, 87%, 63%);
+  color: hsl(0, 100%, 100%);
+  width:160px;
+  border: none;
+  padding:18px;
+
+  border-radius: 30px;
+  box-shadow: 0 5px 15px hsla(223, 87%, 63%,.5);
+
+}
+
+button.blueBtn:hover {
+  background-color: hsl(223, 90%, 77%);
+cursor: pointer;
+}
+.errorMessage {
+  display: none;
+  position: absolute;
+  color:hsl(354, 55%, 60%);
+  font-size: 12px;
+  top:296px;
+  left:432px;
+  padding-left: 10px;
+  font-style: italic;
+}
+
+
+img {
+  max-width: 50%;
+  height: auto;
+  padding: 4.8rem 0rem 0rem 0rem;
+ 
+}
+
+footer {
+  padding-top:4rem;
+  font-size: 12px;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+  }
+
+  .copyright {
+  margin-top: 1rem;
+  }
+
+ .socials {
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 10px;
+ }
+
+  .social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height:32px;
+    border-radius: 50%;
+    border: 1px solid  hsla(0, 0%, 59%, .2);
+    background-color: transparent;
+  }
+
+  
+  i.fa-brands {
+    color: hsl(223, 87%, 63%);
+    font-size: 16px;
+  }
+ 
+.social-btn:hover {
+  background-color: hsl(223, 87%, 63%);
+  cursor: pointer;
+  transition: ease-in .3s;
+}
+
+i.fa-brands:hover {
+  color:hsl(0, 0%, 100%);
+}
+
+
+
+/* --------------MOBILE----------------- */
+
+@media screen  and (max-width:375px){
+.main-container {
+  /* background-color: aquamarine; */
+  width:100%;
+  padding:2rem 0rem 2rem 0rem;
+}
+.logo {
+
+  transform: scale(.55);
+}
+h1 {
+font-size: 24px;
+}
+p {
+font-size: 14px;
+}
+input, button.blueBtn  {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
+::placeholder {
+  padding-left:20px;
+  }
+
+
+img {
+max-width: 84%;
+padding: 3.4rem 0rem 3.5rem 0rem;
+
+}
+
+.social-btn {
+  width: 38px;
+  height: 38px;
+}
+i {
+  font-size: 17px;
+}
+.copyright {
+  font-size:12px;
+}
+
+.errorMessageMob {
+display: none;
+left:20%;
+top:43.5%;
+}
+}
+
